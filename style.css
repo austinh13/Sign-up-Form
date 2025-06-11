@@ -28,19 +28,39 @@ body{
 .signUp p{
     font-size: 30px;
     color: white;
+    transition: font-size 0.2s ease; 
+}
+
+.signUp p:hover{
+    font-size: 32px;
 }
 
 .info{
     width: 48vw;
     height: 38vh;
-    padding: 15px 10px 15px 10px;
+    padding: 15px 15px 15px 15px;
 
     display: flex;
     flex-direction: column;
     background-color: rgb(18,71,52);
+    border-radius: 5px;
+
+    gap:10px;
 }
 
 .info p{
     margin: 0;
     font-size: 25px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+.row label{
+    font-size: 22px;
+    color: white;
 }
