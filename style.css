@@ -1,18 +1,22 @@
 body{
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+/* Basically the body */
 .screen{
     display: flex;
     flex-direction: row;
     margin: 0;
 }
 
+/* Left side of screen image */
 .screen img{
     width: 45vw;
     height: 100vh;
 }
+
+/* Right side of screen */
 
 .signUp{
     width: 49vw;
@@ -25,46 +29,71 @@ body{
     padding: 3vh 3vw 3vh 3vw;
 }
 
+/* Header of sign up side */
 #header{
-    font-size: 26px;
+    width: 35vw;
+    text-align: center;
+    font-size: 35px;
     color: white;
     transition: font-size 0.2s ease; 
 }
 
 #header:hover{
-    font-size: 28px;
-    animation: shake 0.6s ease;
+    font-size: 38px;
+    animation: shake 0.4s ease;
 }
 
+/* Sign up section */
 .info{
     width: 48vw;
-    height: 38vh;
-    padding: 15px 15px 15px 15px;
+    height: 36vh;
+    padding: 15px 15px 0px 15px;
 
     display: flex;
     flex-direction: column;
     background-color: rgb(18,71,52);
     border-radius: 5px;
 
-    gap:10px;
+    gap:20px;
 }
 
+/* Create account now! */
 .info p{
     margin: 0;
-    font-size: 23px;
+    font-size: 25px;
     color: white;
 }
 
+/* Where each of the forms are at */
 .row{
     display: flex;
     flex-direction: row;
-
+    margin: 18px 18px 10px 18px;
     gap: 50px;
 }
 
 .row label{
     font-size: 20px;
     color: white;
+}
+
+.submit{
+    width: 100%;                
+    display: flex;
+    justify-content: flex-start;  
+    padding-left: 15px;           
+    margin-top: 20px;    
+}
+
+.submit button{
+    width: 125px;
+    height: 75px;
+
+    background-color: rgba(95, 244, 182, 0.775);
+    border-radius: 10px;
+    border-width: 0px;
+    color: white;
+    font-size: 25px;
 }
 
 @keyframes shake {
