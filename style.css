@@ -105,6 +105,8 @@ input{
 }
 
 .check{
+    color:white;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,6 +130,11 @@ input{
 .check.active{
     opacity: 1;
     pointer-events: auto;
+}
+
+.check.deactive{
+    opacity: 0;
+    pointer-events: none;
 }
 
 .answer{

@@ -31,11 +31,17 @@ function getInfo(){
         pass = finalPass.value;
 
         userName.innerHTML = "Name: " + first + " " + last;
-        userEmail.innerHTML = mail;
-        userPhone.innerHTML = number;
-        userPass.innerHTML - pass;
+        userEmail.innerHTML = 'Email: ' + mail;
+        userPhone.innerHTML = "Phone Number: " + number;
+        userPass.innerHTML - "Password: " + pass;
 
         check.classList.toggle("active");
 
     }
+}
+
+function confirmed(){
+    const check = document.getElementById("check");
+
+    check.classList.toggle("deactive");
 }
