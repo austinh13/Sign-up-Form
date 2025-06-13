@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Sign-Up</title>
 </head>
 <body>
@@ -21,40 +22,50 @@
                 <form class = "row">
                     <div>
                         <label>First Name: </label> <br>
-                        <input type = "text">
+                        <input id = "firstName" type = "text">
                     </div>
                     <div>
                         <label>Last Name: </label> <br>
-                        <input type = "text">
+                        <input id = "lastName" type = "text">
                     </div>
                 </form>
 
                 <form class = "row">
                         <div>
                             <label>E-mail: </label> <br>
-                            <input type = "text">
+                            <input id = "eMail" type = "text">
                         </div>
                         <div>
                             <label>Phone Number: </label> <br>
-                            <input type = "text">
+                            <input id = "phoneNumber" type = "text">
                         </div>
                 </form>
 
                 <form class = "row">
                         <div>
                             <label>Password: </label> <br>
-                            <input type = "text">
+                            <input id = "password" type = "text">
                         </div>
                         <div>
                             <label>Confirm Password: </label> <br>
-                            <input type = "text">
+                            <input id = "finalPass" type = "text">
                         </div>
                 </form>
             </div>
 
             <form class = "submit">
-                <button type="button"><strong>Submit</strong></button>
+                <button type="button" onclick="getInfo()"><strong>Submit</strong></button>
             </form>
+        </div>
+    </div>
+    <div class = "check">
+        <p id = "userName">adad</p>
+        <p id = "userEmail">adad</p>
+        <p id = "userPhone">adad</p>
+        <p id = "userPass">adad</p>
+        <div class = "answer" id = "answer">
+            <button id ="yes"></button>
+            <button id = "no"></button>
         </div>
     </div>
 </body>
