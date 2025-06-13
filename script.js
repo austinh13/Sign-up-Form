@@ -16,7 +16,7 @@ function getInfo(){
     const check = document.getElementById("check");
     
 
-    if(password.value != finalPass){
+    if(password.value != finalPass.value){
         alert("Passwords not the same!");
     }
     else{
@@ -28,6 +28,13 @@ function getInfo(){
         last = lastName.value;
         mail = eMail.value;
         number = phoneNumber.value;
+        pass = finalPass.value;
+
+        userName.innerHTML = "Name: " + first + " " + last;
+        userEmail.innerHTML = mail;
+        userPhone.innerHTML = number;
+        userPass.innerHTML - pass;
+
         check.classList.toggle("active");
 
     }
